@@ -25,11 +25,9 @@ from arcpy import conversion
 
 #VARIABLES
     #define folder where .csv data files are located
-# strFileDirectory = r"M:\IRGIS\Mapping\AGprojects\FY2018\511047_TraciePhillips\Request_C_20170921\Docs\Testing"
 strFileDirectory = raw_input("File directory of .csv data files: ")
 strDeleteChars = ', \/:*?"<>|'
     #define output folder for processed csv files
-# strOutputCSVFileDirectory = r"M:\IRGIS\Mapping\AGprojects\FY2018\511047_TraciePhillips\Request_C_20170921\Docs\Testing\processedbyGIS"
 strOutputCSVFileDirectory = raw_input("Output file directory for processed maximum value .csv data files: ")
     #define geodatabase where feature classes will be stored
 env.workspace = raw_input("Workspace gdb: ")
